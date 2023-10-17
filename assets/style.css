@@ -215,6 +215,12 @@
     border-bottom: var(--light) 5px solid;
   }
   
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: var(--light);
+    color: var(--light)
+  }
   /* Phone Screen */
   @media screen and (max-width: 390px) {
     body {

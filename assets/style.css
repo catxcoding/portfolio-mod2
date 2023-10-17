@@ -1,0 +1,361 @@
+:root {
+    --black: #000000;
+    --grey: #BEB7A4;
+    --red: #FF3F00;
+    --orange: #FF7F11;
+    --stark: #ffffff;
+    --light: #ffffff;
+    --backgroundgradient: linear-gradient(to bottom, rgba(255, 63, 0), rgba(255, 127, 17) 50%, rgba(190, 183, 164));
+    --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.815);
+    
+  }
+  
+  body {
+    font-family:"PT Sans", Calibri, Tahoma, sans-serif;;
+    background-image: url("./assets/images/mydrawing.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px;
+  }
+  
+  .navbar {
+    height: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%; 
+  }
+  
+  #my-name {
+    font-size: 70px;
+    color: var(--light);
+    padding-left: 15px;
+    border-left: 5px solid var(--fuscia);
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--light);
+  }
+  
+  .navbar-links a:hover {
+    border-bottom: #FF7F11 5px solid;
+  }
+  
+  #background-panorama {
+    max-height: 150px;
+    height: 100%;
+    margin: 15%;
+  }
+  
+  body, html {
+    height: 100%;
+}
+
+
+  #about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: var(--light);
+    color: var(--grey);
+    position: relative;
+    top: -5px;
+    padding: 50px;
+  }
+  
+  #about-me h1 {
+    font-size: 90px;
+    text-align: center;
+    border-right: 5px solid var(--grey);
+    padding-right: 50px;
+  }
+  
+  #about-me p {
+      font-size: 25px;
+      padding: 50px;
+      line-height: 30px;
+  }
+  
+  #about-me img {
+    height: 200px;
+  }
+  
+  #projects {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    background-color: var(--light);
+    color: var(--grey);
+    position: relative;
+    top: -5px;
+    padding: 50px;
+  }
+  
+  #projects h1 {
+    font-size: 90px;
+    text-align: center;
+    border-right: 5px solid var(--grey);
+    padding-right: 50px;
+    padding-bottom: 50px;
+    max-width:265px;
+    width: 100%;
+  }
+  
+  .projects-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+  }
+  
+  .main-project-box {
+    height: 250px;
+    width: 100%;
+    border: var(--jewel) 5px solid;
+    background-image: url(../images/bi-background-black.png);
+    margin-bottom: 20px;
+  }
+  
+  #projects h5 {
+    color: var(--light);
+    font-size: 50px;
+    padding: 10px 0px 5px 15px;
+  }
+  
+  #projects h4 {
+    color: var(--light);
+    font-size: 40px;
+    padding: 10px 0px 5px 15px;
+  }
+  
+  #projects p {
+    color: var(--light);
+    font-size: 25px;
+    padding: 10px 0px 5px 15px;
+  }
+  
+  .main-project-box:hover {
+    background: var(--backgroundgradient);
+    box-shadow: var(--box-shadow);
+    opacity: .5;
+    background-image: url(../images/bi-background-black.png);
+  }
+  
+  .side-project-boxes {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+  }
+  
+  .side-project-box {
+    max-height: 225px;
+    max-width: 225px;
+    padding: 25px;
+    border: var(--dark) 5px solid;
+    background-image: url(../images/bi-background-black.png);
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .side-project-box:hover {
+    background: var(--backgroundgradient);
+    box-shadow: var(--box-shadow);
+    opacity: .5;
+    background-image: url(../images/bi-background-black.png);
+  }
+  
+  #contact-me {
+    margin-top: 100px;
+    max-height: 500px;
+    height: 100%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%; 
+  }
+  
+  #contact-me h1 {
+    color: var(--light);
+    font-size: 90px;
+    text-align: center;
+    border-right: 5px solid var(--light);
+    margin: 100px 0px 100px 0px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    max-width:265px;
+    width: 100%;
+  }
+  
+  .contact-links a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--light);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .contact-links a:hover {
+    border-bottom: var(--light) 5px solid;
+  }
+  
+  /* Phone Screen */
+  @media screen and (max-width: 390px) {
+    body {
+      max-width: 390px;
+      width: 100%;
+    }
+  
+    .side-project-boxes {
+      justify-content: center;
+    }
+  
+    #my-name {
+      font-size: 50px;
+    }
+  
+    .navbar-links a {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+  
+    #about-me, #projects, #contact-me {
+      flex-direction: column;
+      gap: 50px;
+      text-align: center;
+      padding: 50px;
+      justify-content: center;
+    }
+    #about-me h1, #projects h1 {
+      border-bottom: 5px solid var(--grey);
+      border-right: 0px;
+      padding: 0%;
+      font-size: 50px;
+    }
+    #projects h5 {
+      padding: 15px 0px 0px 0px;
+      font-size: 30px;
+    }
+    #projects p {
+      font-size: 15px;
+    }
+  
+    #contact-me h1 {
+      border-bottom: 5px solid var(--light);
+      border-right: 0px;
+      font-size: 50px;
+      padding: 0%;
+      margin: 20px 0px 20px 0px;
+    }
+    #about-me p {
+      padding:0%;
+    }
+    #contact-me a {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .side-project-box {
+      margin: 15px 0px 20px 0px;
+      height: 150px;
+      width: 150px;
+      align-content: center;
+      gap: 15%;
+    }
+    .side-project-box h5 {
+      font-size: 30px;
+      padding: 0%;
+    }
+    .side-project-box p {
+      font-size: 15px;
+      padding: 0%;
+    }
+  }
+  
+  /* Tablet screen */
+  @media screen and (max-width: 912px) {
+    body {
+      max-width: 912px;
+      width: 100%;
+      padding: 15px;
+    }
+    .side-project-boxes {
+      justify-content: center;
+    }
+  
+    #my-name {
+      font-size: 50px;
+    }
+  
+    .navbar-links a {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+  
+    #about-me, #projects, #contact-me {
+      flex-direction: column;
+      gap: 50px;
+      text-align: center;
+      padding: 50px;
+      justify-content: center;
+    }
+    #about-me h1, #projects h1 {
+      border-bottom: 5px solid var(--grey);
+      border-right: 0px;
+      padding: 0%;
+      font-size: 50px;
+    }
+  
+    #projects h5 {
+      padding: 15px 0px 0px 0px;
+      font-size: 30px;
+    }
+    #projects p {
+      font-size: 15px;
+    }
+  
+    #contact-me h1 {
+      border-bottom: 5px solid var(--light);
+      border-right: 0px;
+      font-size: 50px;
+      padding: 0%;
+      margin: 20px 0px 20px 0px;
+    }
+    #about-me p {
+      padding:0%;
+    }
+    #contact-me a {
+      font-size: 20px;
+      line-height: 40px;
+    }
+    .side-project-box {
+      margin: 15px 0px 20px 0px;
+      height: 150px;
+      width: 150px;
+      align-content: center;
+      gap: 15%;
+    }
+    .side-project-box h5 {
+      font-size: 30px;
+      padding: 0%;
+    }
+    .side-project-box p {
+      font-size: 15px;
+      padding: 0%;
+    }
+  }

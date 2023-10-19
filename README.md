@@ -33,7 +33,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ### Links
-```
+
 
 [Deployed Site](https://catxcoding.github.io/portfolio-mod2/)
 
@@ -41,7 +41,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ![Screenshot](assets/images/screenshot.png)
 
-```
+
 
 ### Resources Used
 

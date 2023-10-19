@@ -35,11 +35,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ### Links
 
 ```
-[Link to the deployed website](https://catxcoding.github.io/portfolio-mod2/)
+![Link to the deployed website](https://catxcoding.github.io/portfolio-mod2/)
 
-[Link to the code repository]( https://github.com/catxcoding/portfolio-mod2 )
+![Link to the code repositor]y(https://github.com/catxcoding/portfolio-mod2)
 
-[screenshot of index.html]()
+![screenshot of index.html]()
 ```
 
 ### Resources Used
